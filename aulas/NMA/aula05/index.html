@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model - DOM</title>
+    <style>
+        body {
+            background-color: rgb(255, 145, 0);
+            color: white;
+            font: normal 15px serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Introdução ao DOM</h1>
+    <p>Aprendendo a usar o DOM</p>
+    <div id="msg">Iniciando com o DOM...</div>
+
+    <script>
+        //********* Selecionando por ID **********
+        //Colocar um indentificador na DIV
+        let id = window.document.getElementById('msg')
+        id.style.background = 'black'
+        id.innerText = 'O Bricio voltou ...'
+
+        //********* Por seletor ********
+        let seletor = window.document.querySelector('div#msg')
+        seletor.style.color = 'blue'
+    </script>
+</body>
+</html>

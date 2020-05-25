@@ -15,11 +15,12 @@
     <h1>Interação com Dados</h1>
     <button onclick="inicio()">Clique aqui para iniciar!</button>
     <section id="resultado">
-        <p>O resultado aparecerá aqui!</p>
+        <p>O resultado <strong>aparecerá </strong>aqui!</p>
     </section>
     <script>
+       
         function inicio(){
-            let nome = prompt("Qual é o seu nome?")
+            let nome = window.prompt("Qual é o seu nome?")
             let result = window.document.getElementById('resultado')
             result.innerHTML = `<p> Olá, <strong>${nome}</strong>! É um prazer! &#x1F596;`
         }
